@@ -1,0 +1,102 @@
+.body {
+    margin: 0 10%;
+}
+input {
+    box-sizing: border-box;
+}
+.imagesize {
+    display: flex;
+    justify-content: center;
+}
+image {
+   width: 100%;
+    
+}
+.explain {
+    display: flex;
+    height: 60rpx;
+    
+    align-items: center;
+}
+.explain view{
+    flex: 1;
+    font-size: 30rpx;
+    
+    
+}
+.deadline {
+    flex: 2 !important  ;
+    text-align: right;
+}
+.introduction{
+    color: white;
+    text-align: center;
+    border-radius: 20rpx;
+    background-color: #68deae;
+}
+.form_son {
+    display: flex;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid rgb(214, 214, 214);
+    padding: 30rpx 0 8rpx 0;
+   
+}
+.form_son view {
+    display: flex;
+    flex: 4;
+    align-items: center;
+}
+.form_son input {
+    flex: 6;
+    text-align: right;
+    
+}
+.form_son picker {
+    flex: 6;
+    text-align: right;
+    
+}
+.form_son2 {
+    display: flex;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid rgb(214, 214, 214);
+    padding: 30rpx 0 8rpx 0;
+   
+}
+.form_son2 view {
+    display: flex;
+    flex: 7;
+    align-items: center;
+}
+.form_son2 input {
+    flex: 3;
+    text-align: right;
+    
+}
+.form_son2 picker {
+    flex: 3;
+    text-align: right;
+    
+}
+.btn {
+    
+    margin: 60rpx 0  30rpx 0;
+    
+}
+.btn button{
+    color: white;
+    display: flex;
+    background-color:  #68deae;
+    width: 250rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rpx;
+}
+.hist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+}

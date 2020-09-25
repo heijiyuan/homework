@@ -1,0 +1,105 @@
+<view class="body">
+    <view class="imagesize"> <image class="" src="../../imgs/健康打卡.jpg" mode="widthFix" /> </view>
+      <view class="explain" >
+        <view class="introduction" >
+             填报说明
+        </view>
+        <view>
+          
+        </view>
+          <view class="deadline">
+            截至时间:2020-09-25
+          </view>
+            
+      </view>
+      
+        <form class="" report-submit="false" bindsubmit="" bindreset="">
+          <view class="_form">
+               <view class="form_son">
+                 <view class="" > 学号</view><input type="text" placeholder="2019213259"/>
+               </view>
+               <view class="form_son">
+                 <view class="" > 姓名</view><input type="text" placeholder="黑纪源"/>
+               </view>
+               <view class="form_son">
+                 <view class="" > 联系电话*</view><input type="text" />
+               </view>
+               <view class="form_son">
+                 <view class="" > 目前居住地*</view>
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                  {{region[0]}}  {{region[1]}} {{region[2]}} >
+               </picker>
+               </view>
+               <view class="form_son">
+                 <view class="" > 居住地详细地址*</view><input type="text" />
+               </view>
+               <view class="form_son">
+                 <view class="" > 假期是否离渝*</view>
+                <picker bindchange="bindPickerChange_leaveyu" value="{{index_leaveyu}}" range="{{array2}}">
+                    {{array2[index_leaveyu]}} >
+                </picker>
+               </view>
+               <view class="form_son2">
+                 <view class="" > 暑假期间有无接触湖北旅居的人员*</view>
+                <picker bindchange="bindPickerChange_touch" value="{{index_touch}}" range="{{array}}">
+                    {{array[index_touch]}} >
+                </picker>
+               </view>
+               <view class="form_son2">
+                 <view class="" > 现居住地有无疑似或确诊病例*</view>
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    {{array[index]}} >
+                </picker>
+               </view>
+               <view class="form_son2">
+                 <view class="" > 暑假期间有无接触疑似或确诊病例*</view>
+                <picker bindchange="bindPickerChange_touch2" value="{{index_touch2}}" range="{{array}}">
+                    {{array[index_touch2]}} >
+                </picker>
+               </view>
+               <view class="form_son">
+                 <view class="" > 体温是否正常*</view>
+               <picker bindchange="bindPickerChange_tem" value="{{index_tem}}" range="{{array2}}">
+                    {{array2[index_tem]}} >
+                </picker>
+               </view>
+              <view class="form_son2">
+                 <view class="" > 有无咳嗽、乏力、鼻塞、流涕、咽痛、腹泻等症状*</view>
+                <picker bindchange="bindPickerChange_sim" value="{{index_sim}}" range="{{array}}">
+                    {{array[index_sim]}} >
+                </picker>
+               </view>
+               <view class="form_son2">
+                 <view class="" > 本人及家庭成员是否为确诊病例*</view>
+                <picker bindchange="bindPickerChange_sure" value="{{index_sure}}" range="{{array2}}">
+                    {{array2[index_sure]}} >
+                </picker>
+               </view>
+               <view class="form_son2">
+                 <view class="" > 本人及家庭成员是否为疑似病例*</view>
+                <picker bindchange="bindPickerChange_sus" value="{{index_sus}}" range="{{array2}}">
+                    {{array2[index_sus]}} >
+                </picker>
+               </view>
+               <view class="form_son">
+                 <view class="" > 有无疾病史*</view>
+                 <picker bindchange="bindPickerChange_his" value="{{index_his}}" range="{{array}}">
+                    {{array[index_his]}} >
+                </picker>
+               </view>
+               <view class="form_son">
+                 <view class="" > 备注</view><input type="text" placeholder="填写其他需要说明的情况"/>
+               </view>
+               <view class="btn">
+                   <button>打卡</button>
+               </view>
+                 <view  class="hist">
+                   历史填报
+                 </view>
+                   
+           </view>
+        </form>
+      
+</view>
+  
+
